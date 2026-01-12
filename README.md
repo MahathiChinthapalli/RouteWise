@@ -6,7 +6,7 @@ RouteWise is a web application that optimizes multi-stop itineraries for travele
 
 - **Smart Route Optimization**: Uses TSP algorithms (Brute Force, Held-Karp, Nearest Neighbor + 2-opt) based on problem size
 - **Interactive Map**: Built with Leaflet for visualizing routes and destinations
-- **Multiple Transport Modes**: Walk, bike, or drive
+- **Multiple Transport Modes**: Walk, bike, transit, or drive
 - **Cost Estimation**: See estimated costs for different transportation options
 - **Location Search**: Search for destinations using Nominatim (OpenStreetMap)
 - **Real-time Distance Matrix**: Fetches actual travel times using OpenRouteService
