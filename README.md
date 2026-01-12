@@ -65,45 +65,6 @@ npm run dev
 4. **Optimize Route**: Click the "Optimize Route" button to calculate the best route
 5. **View Itinerary**: See step-by-step directions with time and cost estimates
 
-## Algorithm Performance
-
-| Destinations | Algorithm | Time Complexity | Performance |
-|-------------|-----------|-----------------|-------------|
-| 2-7 stops | Brute Force | O(n!) | Guaranteed optimal |
-| 8-10 stops | Held-Karp DP | O(n² × 2ⁿ) | Exact solution |
-| 11-15 stops | Nearest Neighbor + 2-opt | O(n²) | ~95% optimal |
-
-## Project Structure
-
-```
-RouteWise/
-├── src/
-│   ├── components/       # React components
-│   │   ├── LocationSearch.tsx
-│   │   ├── DestinationList.tsx
-│   │   ├── RouteMap.tsx
-│   │   ├── Itinerary.tsx
-│   │   └── ControlPanel.tsx
-│   ├── services/         # API services
-│   │   └── api.ts
-│   ├── store/           # Zustand state management
-│   │   └── routeStore.ts
-│   ├── types/           # TypeScript type definitions
-│   │   └── index.ts
-│   ├── utils/           # Utility functions
-│   │   └── tsp-algorithms.ts
-│   ├── App.tsx          # Main app component
-│   ├── App.css          # Styles
-│   └── main.tsx         # Entry point
-├── package.json
-└── README.md
-```
-
-## API Rate Limits
-
-- **OpenRouteService Free Tier**: 2,000 requests/day
-- **Nominatim**: Max 1 request/second (handled automatically)
-
 ## Future Enhancements
 
 - Public transit integration
@@ -114,16 +75,7 @@ RouteWise/
 - Multi-day trip planning
 - Native mobile apps
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-MIT License
-
 ## Acknowledgments
 
-- Built based on the RouteWise Product Requirements Document
 - Uses OpenStreetMap data via Nominatim
 - Routing powered by OpenRouteService
